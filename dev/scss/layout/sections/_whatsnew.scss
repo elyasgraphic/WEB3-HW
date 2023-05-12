@@ -1,0 +1,150 @@
+#whatsnew{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+        section{
+            .textdetail{
+                padding: 15px;
+            }
+        }
+
+        figure{
+            margin: 0;
+            overflow: hidden;
+        }
+
+    @include md{
+        flex-direction: row;
+         flex-wrap: wrap;
+        justify-content: space-between;
+        gap:25px;
+        margin-bottom: 38px;
+        margin-top: 73px ;
+
+
+            section{
+            width: 48%;
+         }
+
+         section:last-child{
+            margin: 0 auto;
+
+         }
+    }
+    @include lg{
+        justify-content: center;
+        margin-bottom: 90px;
+        margin-top: 90px;
+        section{
+            width: 45%;
+        }
+    }
+   
+    #aot{
+        grid-area: aot;
+        height: auto;
+        background-color: #654141;
+        img{
+            width: 100%;
+        }
+        h3{
+            color: #FFF;
+        }
+        p{
+            color: #FFF;
+        }
+        button{
+            background-color: #FFF9F0;
+        }
+        button:hover{
+            background-color: #D1C0A8;
+            transition: .5s;
+            position: -5px;
+        }
+    }
+    #jjk{
+        grid-area: jjk;
+        background-color:#272B45;
+        img{
+            width: 100%;
+        }
+        h3{
+            color: #FFF;
+        }
+        p{
+            color: #FFF;
+        }
+        button{
+            background-color: #FFF9F0;
+        }
+        button:hover{
+            background-color: #D1C0A8;
+            transition: .5s;
+            position: -5px;
+        }
+    }
+    #jojo{
+        grid-area: jojo;
+        background-color: #717B6F;
+        img{
+            width: 100%;
+        }
+        h3{
+            color: #FFF;
+        }
+        p{
+            color: #FFF;
+        }
+        button{
+            background-color: #FFF9F0;
+        }
+        button:hover{
+            background-color: #D1C0A8;
+            transition: .5s;
+            position: -5px;
+        }
+    }
+    #kaguya{
+        grid-area: kaguya;
+        background-color: #BA4047 ;
+        img{
+            width: 100%;
+        }
+        h3{
+            color: #FFF;
+        }
+        p{
+            color: #FFF;
+        }
+        button{
+            background-color: #FFF9F0;
+        }
+        button:hover{
+            background-color: #D1C0A8;
+            transition: .5s;
+            position: -5px;
+        }
+    }
+    #kings{
+        grid-area:kings;
+        background-color: #5A5B7E;
+        img{
+            width: 100%;
+        }
+        h3{
+            color: #FFF;
+        }
+        p{
+            color: #FFF;
+        }
+        button{
+            background-color: #FFF9F0;
+        }
+        button:hover{
+            background-color: #D1C0A8;
+            transition: .5s;
+            position: -5px;
+        }
+    }
+}

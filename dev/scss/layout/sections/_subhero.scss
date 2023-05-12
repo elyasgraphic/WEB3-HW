@@ -1,0 +1,67 @@
+#subhero{
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @include md{
+        grid-template-columns: 2fr;
+        grid-template-areas:
+            "up down";
+
+        margin-left: 12px;
+        margin-right: 12px;
+        margin-top: 22px;
+        margin-bottom: 41px;
+        justify-content: center;
+    }
+    @include lg{
+        margin-top: 31px;
+        margin-left: 11px;
+        margin-right: 11px;
+        margin-bottom: 63px ;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "up down";
+        justify-content: center;
+    }
+
+section#up{
+   background-color: #B3E1EF ;
+    grid: left;
+   h4{
+        color: #FFF; 
+    }
+    h3{
+        color: #FFF;
+    }
+    img{
+        width: 25%;
+        display: flex;
+    }
+    a{
+        background-color:#E48845 ;
+        display: flex;
+    }
+
+}
+section#down{
+    background-color: #CEBDE0 ;
+    grid: right;
+    h4{
+        color: #FFF;
+    }
+    h3{
+        color: #FFF;
+    }
+    a{
+        color: #000;
+        display: flex;
+    }
+    img{
+        width: 25%;
+        display: flex;
+    }
+    a{
+        background-color: #FFFB95;
+    }
+    }
+}

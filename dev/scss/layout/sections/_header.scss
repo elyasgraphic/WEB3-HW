@@ -1,0 +1,63 @@
+header{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    nav{
+
+        background-color: #000;
+        padding: 24px;
+        
+        display: flex;
+        div{
+            display:none;
+
+        //Ipad Media Query
+
+            @include md{
+                display:inline;
+                padding-left: 15px;
+                column-gap: 15px;
+            }
+        }
+        #logo{
+            display: flex;
+        }
+    }
+    img{
+    width: 100%;
+    }
+
+    h1{
+        color: #FFF;
+    }
+    p{
+        
+        color: #FFF;
+    }
+    section{
+        padding: 24px;
+
+       form#search{
+
+        display: flex;
+        width: 100%;
+        align-items: stretch;
+        justify-content: space-between;
+        gap: 10px;
+        
+       }
+
+        input{
+            border: none;
+            width: 100%;
+            border-bottom: 1px;
+        }
+
+         button{
+        border-radius: 3.5px;
+        border: none;
+        padding: 6px 11px 6px 11px;
+    }
+    }
+    
+}

@@ -1,0 +1,26 @@
+footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: black;
+
+    .socials{
+        list-style: none;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    a{
+        color: #FFF;
+        padding: 20px;
+    }
+    a:hover{
+        background-color: #FF7D54;
+        transition: .5s;
+        position: -5px;
+    }
+    h3{
+        color: #FFF;
+    }
+
+}

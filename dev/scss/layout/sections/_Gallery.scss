@@ -1,0 +1,72 @@
+section#gallery {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "denji"
+      "luffy";
+
+    justify-content: center;
+
+    .denji {
+      grid-area: denji;
+      height: 300px;
+      background-image: url(../img/ChainsawMan.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .luffy {
+      grid-area: luffy;
+      height: 300px;
+      background-image: url(../img/ONEPIECEMOBILE.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+
+    .demon {
+      display: none;
+      width: 100%;
+      grid-area: demon;
+      background-image: url(../img/DemonSlayer.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+    @include md {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "denji luffy";
+
+      .denji, .luffy{
+        height: 900px;
+      }
+
+    }
+    @include lg {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "denji luffy"
+        "denji demon";
+
+        .denji{
+          height: auto;
+        }
+        .demon{
+            display: inline;
+          }
+
+        .luffy, .demon{
+          height: 400px;
+        }
+          
+    }
+
+   
+  }
+}
