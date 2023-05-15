@@ -747,7 +747,26 @@ footer {
   grid-template-columns: 1fr;
   background-color: black;
 }
+@media (min-width: 768px) {
+  footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "links newsletter";
+  }
+}
+@media (min-width: 1024px) {
+  footer {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "links newsletter socials";
+  }
+}
+footer .links {
+  grid-area: links;
+}
+footer .newsletter {
+  grid-area: newsletter;
+}
 footer .socials {
+  grid-area: socials;
   list-style: none;
   display: flex;
   align-items: center;
@@ -764,4 +783,10 @@ footer a:hover {
 }
 footer h3 {
   color: #FFF;
+}
+footer button {
+  background-color: #FF7D54;
+}
+footer button:hover {
+  background-color: #FFF;
 }

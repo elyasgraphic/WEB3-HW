@@ -2,14 +2,31 @@ footer{
     display: grid;
     grid-template-columns: 1fr;
     background-color: black;
+    
+    @include md{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "links newsletter";
 
+    }
+    @include lg{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "links newsletter socials";
+    }
+    .links{
+        grid-area: links;
+    }
+    .newsletter{
+        grid-area: newsletter;
+    }
     .socials{
+        grid-area: socials;
         list-style: none;
         display:flex;
         align-items: center;
         justify-content: center;
     }
-
     a{
         color: #FFF;
         padding: 20px;
@@ -21,6 +38,12 @@ footer{
     }
     h3{
         color: #FFF;
+    }
+    button{
+        background-color: #FF7D54;
+    }
+    button:hover{
+        background-color: #FFF;
     }
 
 }
