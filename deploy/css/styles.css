@@ -749,18 +749,32 @@ footer {
 }
 @media (min-width: 768px) {
   footer {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr;
     grid-template-areas: "links newsletter";
+  }
+  footer .links {
+    margin-left: 25px;
+    margin-right: 19px;
+  }
+  footer .newsletter {
+    margin-left: 25px;
+    margin-right: 19px;
+  }
+  footer .socials {
+    margin-left: 25px;
+    margin-right: 19px;
   }
 }
 @media (min-width: 1024px) {
   footer {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 3fr;
     grid-template-areas: "links newsletter socials";
   }
 }
 footer .links {
   grid-area: links;
+  margin-left: 8px;
+  margin-right: 10px;
 }
 footer .newsletter {
   grid-area: newsletter;
@@ -771,6 +785,8 @@ footer .socials {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 8px;
+  margin-right: 10px;
 }
 footer a {
   color: #FFF;

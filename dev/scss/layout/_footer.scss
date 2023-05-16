@@ -4,21 +4,37 @@ footer{
     background-color: black;
     
     @include md{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 2fr;
         grid-template-areas: 
         "links newsletter";
 
+        .links{
+            margin-left: 25px;
+            margin-right: 19px;
+        }
+        .newsletter{
+            margin-left: 25px;
+            margin-right: 19px;
+        }
+        .socials{
+            margin-left: 25px;
+            margin-right: 19px;
+        }
+
     }
     @include lg{
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 3fr;
         grid-template-areas: 
         "links newsletter socials";
     }
     .links{
         grid-area: links;
+        margin-left: 8px;
+        margin-right: 10px;
     }
     .newsletter{
         grid-area: newsletter;
+        
     }
     .socials{
         grid-area: socials;
@@ -26,6 +42,8 @@ footer{
         display:flex;
         align-items: center;
         justify-content: center;
+        margin-left: 8px;
+        margin-right: 10px;
     }
     a{
         color: #FFF;
